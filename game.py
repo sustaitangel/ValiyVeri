@@ -1,7 +1,6 @@
 puntos=['0','15','30','40','Douce', 'Ventaja', 'Ganador']
 class  Game:
 	"""cuando los dos van en cero
-
 	>>> games=Game()
 	>>> games.score()
 	['0', '0']
@@ -94,7 +93,10 @@ class  Game:
 
 		if (self.lista[0]=='40' and self.lista[1]=='40'):
 			self.lista=[puntos[4], puntos[4]]	
-		
+		if(self.lista[0]=='Ventaja' and self.lista[1]=='0'):
+			self.lista[0]=puntos[6]
+		if(self.lista[1]=='Ventaja' and self.lista[0]=='0'):
+			self.lista[1]=puntos[6]
 		print(self.lista)
 			
 	
