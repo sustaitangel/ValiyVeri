@@ -1,3 +1,4 @@
+# -*- encoding: utf-8 -*-
 import re
 
 roman_numeral_map = (('M',  1000),
